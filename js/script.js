@@ -1,4 +1,12 @@
 let cart=JSON.parse(localStorage.getItem("cart"))||[];
+let menuButton=document.getElementById("menuButton");
+let menu=document.getElementById("menu");
+
+if(menuButton){
+  menuButton.onclick=function(){
+    menu.classList.toggle("show");
+  };
+}
 
 document.querySelectorAll("[data-add]").forEach(function(btn){
   btn.onclick=function(){

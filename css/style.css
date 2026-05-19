@@ -18,6 +18,8 @@ nav a{
   text-decoration:none;
 }
 
+#menuButton{display:none}
+
 main{padding:25px 0}
 p{color:#c7d2e0;line-height:1.6}
 img{max-width:100%}
@@ -61,4 +63,8 @@ textarea{height:120px}
 
 @media(max-width:800px){
   .grid,.two{grid-template-columns:1fr}
+  #menuButton{display:block}
+  #menu{display:none}
+  #menu.show{display:block}
+  nav a{display:block;margin:10px 0}
 }
