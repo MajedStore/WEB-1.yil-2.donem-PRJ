@@ -1,148 +1,78 @@
 <!doctype html>
-    <html lang="tr">
-    <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Ana Sayfa | NovaCart</title>
-      <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-      <header>
-        <div class="container topbar">
-          
-<a class="brand" href="index.html">
-<img src="images/logo.png" width="40">
-<div class="brand-text">
-<strong>NovaCart</strong>
-<span>E-ticaret vitrini</span>
-</div>
-</a>
-
-          <button class="nav-toggle" aria-label="Menü aç/kapat">☰</button>
-          <nav aria-label="Ana menü">
-            <ul id="menu"><li><a href="index.html" class="active">Ana Sayfa</a></li>
-<li><a href="urunler.html" class="">Urunler</a></li>
-<li><a href="sepet.html" class="">Sepet</a></li>
-<li><a href="hakkimizda.html" class="">Hakkimizda</a></li>
-<li><a href="iletisim.html" class="">Iletisim</a></li></ul>
-          </nav>
-        </div>
-      </header>
-      <main>
-<section class="hero">
-  <div class="container hero-grid">
-    <div class="box hero-text">
-      <span class="badge">E-Ticaret Ürün Vitrini</span>
-      <h1>Basit bir mağaza görünümü</h1>
-      <p>Bu proje, çok karmaşık görünmeyen ama gerçek bir mağazayı andıran bir vitrin sitesi olarak hazırlandı. Ürün kartları, detay sayfaları, sepet, iletişim ve hakkımızda bölümleri var.</p>
-      <div class="actions">
-        <a class="btn btn-primary" href="urunler.html">Ürünlere git</a>
-        <a class="btn btn-ghost" href="hakkimizda.html">Proje bilgisi</a>
-      </div>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NovaCart</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h2>NovaCart</h2>
+      <nav>
+        <a href="index.html">Ana Sayfa</a>
+        <a href="urunler.html">Urunler</a>
+        <a href="sepet.html">Sepet</a>
+        <a href="hakkimizda.html">Hakkimizda</a>
+        <a href="iletisim.html">Iletisim</a>
+      </nav>
     </div>
-    <div class="box hero-image">
-      <img src="images/hero.png" alt="Mavi ve siyah tonlarda mağaza çizimi">
-    </div>
-  </div>
-</section>
+  </header>
 
-<section class="section">
-  <div class="container">
-    <div class="section-head">
+  <main class="container">
+    <div class="two">
       <div>
-        <h2>Öne çıkan ürünler</h2>
-        <p>Her ürün için ayrı detay sayfası bulunur.</p>
+        <h1>Basit e-ticaret sitesi</h1>
+        <p>Bu proje urun listeleme, urun detayi, sepete ekleme ve iletisim sayfalarindan olusan basit bir magazadir.</p>
+        <a class="btn" href="urunler.html">Urunlere Git</a>
       </div>
-      <a class="btn btn-ghost" href="sepet.html">Sepete bak</a>
+      <img src="images/hero.png" alt="Magaza gorseli">
     </div>
 
-    <div class="grid-4">
-      <article class="card">
-        <figure><img src="images/p1.jpg" alt="NovaBook Air ürün görseli"></figure>
-        <div class="content">
-          <span class="badge">Bilgisayar</span>
-          <h3>NovaBook Air</h3>
-          <p>Günlük kullanım için hafif bir dizüstü.</p>
-          
-          <div class="actions">
-            <a class="btn btn-primary" href="urun-detay-1.html">Detay</a>
-            <button class="btn btn-primary" data-add data-name="NovaBook Air" data-price="24000">Sepete Ekle</button>
-          </div>
-          <div class="price">24.999 TL</div>
-        </div>
-      </article>
+    <h2>One Cikan Urunler</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="images/p1.jpg" alt="NovaBook Air">
+        <h3>NovaBook Air</h3>
+        <p>Hafif dizustu bilgisayar.</p>
+        <p>24999 TL</p>
+        <a class="btn" href="urun-detay-1.html">Detay</a>
+        <button data-add data-name="NovaBook Air" data-price="24000">Sepete Ekle</button>
+      </div>
 
-      <article class="card">
-        <figure><img src="images/p2.jpg" alt="Pulse Watch ürün görseli"></figure>
-        <div class="content">
-          <span class="badge">Saat</span>
-          <h3>Pulse Watch</h3>
-          <p>Temel akıllı saat özellikleri olan model.</p>
-          
-          <div class="actions">
-            <a class="btn btn-primary" href="urun-detay-2.html">Detay</a>
-            <button class="btn btn-primary" data-add data-name="Pulse Watch" data-price="4500">Sepete Ekle</button>
-          </div>
-          <div class="price">4.499 TL</div>
-        </div>
-      </article>
+      <div class="card">
+        <img src="images/p2.jpg" alt="Pulse Watch">
+        <h3>Pulse Watch</h3>
+        <p>Basit akilli saat.</p>
+        <p>4499 TL</p>
+        <a class="btn" href="urun-detay-2.html">Detay</a>
+        <button data-add data-name="Pulse Watch" data-price="4500">Sepete Ekle</button>
+      </div>
 
-      <article class="card">
-        <figure><img src="images/p3.png" alt="SoundCore X ürün görseli"></figure>
-        <div class="content">
-          <span class="badge">Ses</span>
-          <h3>SoundCore X</h3>
-          <p>Rahat kullanım sunan kulaklık modeli.</p>
-          
-          <div class="actions">
-            <a class="btn btn-primary" href="urun-detay-3.html">Detay</a>
-            <button class="btn btn-primary" data-add data-name="SoundCore X" data-price="2200">Sepete Ekle</button>
-          </div>
-          <div class="price">2.199 TL</div>
-        </div>
-      </article>
+      <div class="card">
+        <img src="images/p3.png" alt="SoundCore X">
+        <h3>SoundCore X</h3>
+        <p>Kablosuz kulaklik.</p>
+        <p>2199 TL</p>
+        <a class="btn" href="urun-detay-3.html">Detay</a>
+        <button data-add data-name="SoundCore X" data-price="2200">Sepete Ekle</button>
+      </div>
 
-      <article class="card">
-        <figure><img src="images/p4.png" alt="NeoPods ürün görseli"></figure>
-        <div class="content">
-          <span class="badge">Aksesuar</span>
-          <h3>NeoPods</h3>
-          <p>Küçük kutulu, taşınması kolay ürün.</p>
-          
-          <div class="actions">
-            <a class="btn btn-primary" href="urun-detay-4.html">Detay</a>
-            <button class="btn btn-primary" data-add data-name="NeoPods" data-price="1500">Sepete Ekle</button>
-          </div>
-          <div class="price">1.499 TL</div>
-        </div>
-      </article>
+      <div class="card">
+        <img src="images/p4.png" alt="NeoPods">
+        <h3>NeoPods</h3>
+        <p>Tasinabilir kulaklik.</p>
+        <p>1499 TL</p>
+        <a class="btn" href="urun-detay-4.html">Detay</a>
+        <button data-add data-name="NeoPods" data-price="1500">Sepete Ekle</button>
+      </div>
     </div>
-  </div>
-</section>
+  </main>
 
-<section class="section">
-  <div class="container grid-3">
-    <article class="small">
-      <h3>Basit yapı</h3>
-      <p>Gereksiz karmaşa yerine anlaşılır sayfalar hazırlandı.</p>
-    </article>
-    <article class="small">
-      <h3>Responsive</h3>
-      <p>Mobilde menü açılır, kartlar alt alta gelir.</p>
-    </article>
-    <article class="small">
-      <h3>Gerçek his</h3>
-      <p>Sepet, detay ve ürün kartları bir mağaza düzeni verir.</p>
-    </article>
-  </div>
-</section>
-</main>
-      <footer>
-        <div class="container footer-inner">
-          <div>Web Teknolojileri dersi için hazırlanmış örnek proje.</div>
-          <div>HTML, CSS ve çok az JavaScript kullanıldı.</div>
-        </div>
-      </footer>
-      <script src="js/script.js"></script>
-    </body>
-    </html>
+  <footer>
+    <div class="container">Web Teknolojileri dersi icin hazirlanmistir.</div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

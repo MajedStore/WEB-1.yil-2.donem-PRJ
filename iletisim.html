@@ -1,87 +1,60 @@
 <!doctype html>
-    <html lang="tr">
-    <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>İletişim | NovaCart</title>
-      <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-      <header>
-        <div class="container topbar">
-          
-<a class="brand" href="index.html">
-<img src="images/logo.png" width="40">
-<div class="brand-text">
-<strong>NovaCart</strong>
-<span>E-ticaret vitrini</span>
-</div>
-</a>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Iletisim</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h2>NovaCart</h2>
+      <nav>
+        <a href="index.html">Ana Sayfa</a>
+        <a href="urunler.html">Urunler</a>
+        <a href="sepet.html">Sepet</a>
+        <a href="hakkimizda.html">Hakkimizda</a>
+        <a href="iletisim.html">Iletisim</a>
+      </nav>
+    </div>
+  </header>
 
-          <button class="nav-toggle" aria-label="Menü aç/kapat">☰</button>
-          <nav aria-label="Ana menü">
-            <ul id="menu"><li><a href="index.html" class="">Ana Sayfa</a></li>
-<li><a href="urunler.html" class="">Urunler</a></li>
-<li><a href="sepet.html" class="">Sepet</a></li>
-<li><a href="hakkimizda.html" class="">Hakkimizda</a></li>
-<li><a href="iletisim.html" class="active">Iletisim</a></li></ul>
-          </nav>
-        </div>
-      </header>
-      <main>
-<section class="section">
-  <div class="container grid-2">
-    <article class="small">
-      <span class="badge">İletişim</span>
-      <h2>Mesaj gönderin</h2>
-      <p>Bu form sadece örnek amaçlıdır. Proje için yeterli düzeyde basit tutulmuştur.</p>
-      <p class="help">Adres: Erzurum / Türkiye<br>Telefon: 0 (500) 000 00 00<br>E-posta: bilgi@novacart.com</p>
-    </article>
+  <main class="container">
+    <h1>Iletisim</h1>
+    <div class="two">
+      <div class="box">
+        <p>Adres: Erzurum / Turkiye</p>
+        <p>Telefon: 0 (500) 000 00 00</p>
+        <p>E-posta: bilgi@novacart.com</p>
+      </div>
 
-    <article class="form-box">
-      <form data-check>
-        <div class="form-grid">
-          <div>
-            <label for="name">Ad Soyad</label>
-            <input id="name" name="name" type="text" placeholder="Adınızı yazın">
-          </div>
-          <div>
-            <label for="email">E-posta</label>
-            <input id="email" name="email" type="email" placeholder="ornek@mail.com">
-          </div>
-        </div>
+      <form class="box" id="contactForm">
+        <label>Ad Soyad</label>
+        <input type="text">
 
-        <div style="margin-top:12px">
-          <label for="subject">Konu</label>
-          <select id="subject" name="subject">
-            <option>Ürün bilgisi</option>
-            <option>Sipariş sorusu</option>
-            <option>Genel iletişim</option>
-          </select>
-        </div>
+        <label>E-posta</label>
+        <input type="email">
 
-        <div style="margin-top:12px">
-          <label for="message">Mesaj</label>
-          <textarea id="message" name="message" placeholder="Mesajınızı yazın"></textarea>
-        </div>
+        <label>Konu</label>
+        <select>
+          <option>Urun bilgisi</option>
+          <option>Siparis sorusu</option>
+          <option>Genel iletisim</option>
+        </select>
 
-        <div class="actions">
-          <button class="btn btn-primary" type="submit">Gönder</button>
-          <button class="btn btn-ghost" type="reset">Temizle</button>
-        </div>
+        <label>Mesaj</label>
+        <textarea></textarea>
 
-        <div id="note" class="note" aria-live="polite"></div>
+        <button type="submit">Gonder</button>
+        <p id="note"></p>
       </form>
-    </article>
-  </div>
-</section>
-</main>
-      <footer>
-        <div class="container footer-inner">
-          <div>Web Teknolojileri dersi için hazırlanmış örnek proje.</div>
-          <div>HTML, CSS ve çok az JavaScript kullanıldı.</div>
-        </div>
-      </footer>
-      <script src="js/script.js"></script>
-    </body>
-    </html>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">Web Teknolojileri dersi icin hazirlanmistir.</div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
